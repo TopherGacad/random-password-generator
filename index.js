@@ -1,9 +1,11 @@
-let text1El = document.getElementById("text-area1")
-let text2El = document.getElementById("text-area2")
-let text3El = document.getElementById("text-area3")
-let text4El = document.getElementById("text-area4")
+const text1El = document.getElementById("text-area1")
+const text2El = document.getElementById("text-area2")
+const text3El = document.getElementById("text-area3")
+const text4El = document.getElementById("text-area4")
 
-let randomEl = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","y","z","0","1","2","3","4","5","6","7","8","9","-","#","%","&","^"]
+let randomEl = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u",
+"v","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","X","Y","Z",
+"0","1","2","3","4","5","6","7","8","9","-","#","%","&","^","/","?","/","!","@","$","*","(",")","_"]
 
 //INITIALIZE THE PASS TO EMPTY STRING
 
@@ -14,7 +16,7 @@ function genpass(){
     let Pass4 = ""
 
     
-    let charLenght = 12
+    const charLenght = 12
     for(let i = 0; i < charLenght; i++){
         let randomPass1 = randomEl[Math.floor(Math.random() * randomEl.length)]
         let randomPass2 = randomEl[Math.floor(Math.random() * randomEl.length)]
